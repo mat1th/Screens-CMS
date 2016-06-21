@@ -24,6 +24,7 @@ var express = require('express'),
     slideshows = require('./routes/admin/slideshows/index'),
     display = require('./routes/display/index'),
     users = require('./routes/admin/users/index'),
+    settings = require('./routes/admin/settings/index'),
     api = require('./routes/api/index');
 
 //import config
@@ -135,6 +136,7 @@ app.use('/admin/displays', displaysAdmin);
 app.use('/admin/content', content);
 app.use('/admin/slideshows', slideshows);
 app.use('/admin/users', users);
+app.use('/admin/settings', settings);
 //get files for slidewhows
 app.use('/display', display);
 app.use('/api', api);

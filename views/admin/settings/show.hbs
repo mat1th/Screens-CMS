@@ -1,0 +1,56 @@
+{{> nav}}
+<section class="main-content">
+    <section class="content-header">
+        <h1>Settings</h1>
+        <section class="tabs">
+            <a href="#personal" class="active">Personal</a>
+            <a href="#mail">Mail</a>
+        </section>
+    </section>
+    <section class="content-body">
+        <section id="personal">
+            <h2>Personal settings</h2>
+            <form class="" action="index.html" method="post">
+                <div class="">
+                    <label for="">Name:</label>
+                    <input type="text" name="Name" value="" placeholder="name@example.nl">
+                </div>
+                <div class="">
+                    <label for="">E-mail:</label>
+                    <input type="text" name="Name" value="" placeholder="name@example.nl">
+                </div>
+                <div class="file-input">
+                    <span class="filename" id="filename">Select your profile picture</span>
+                    <label for="field-file" class="btn btn-default ">Browse
+                        <input type="file" name="imageFile" for="hio" value="" id="field-file">
+                    </label>
+                </div>
+                <button type="submit" name="button" class="btn btn-default" disabled="true">Save</button>
+            </form>
+            <h2>Secutity settings</h2>
+            <form class="" action="index.html" method="post">
+
+                <div class="">
+                    <label for="">Mail Adress:</label>
+                    <input type="email" name="email" value="" placeholder="name@example.nl">
+                </div>
+                <div class="">
+                    <label for="">Password:</label>
+                    <input type="password" name="password" value="" placeholder="password">
+                </div>
+                <button type="submit" name="button" class="btn btn-default" disabled="true">Save</button>
+            </form>
+        </section>
+        <section id="mail">
+          <h2>Mail settings</h2>
+          <form class="" action="index.html" method="post">
+              <div class="">
+                  <label for="">To which mail should the notifications be send?</label>
+                  <input type="text" name="Name" value="" placeholder="name@example.nl">
+              </div>
+              <button type="submit" name="button" class="btn btn-default" disabled="true">Save</button>
+          </form>
+        </section>
+
+    </section>
+</section>
